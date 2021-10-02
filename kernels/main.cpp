@@ -26,10 +26,11 @@ using namespace std;
 
 int main(int argc, char **argv) {
     const auto datasets = [&]() {
-        if (argc == 0) {
+        if (argc <= 1) {
+            std::cout << "Using default datasets\n";
             return vector<std::string>{"ENZYMES", "IMDB-BINARY", "IMDB-MULTI", "NCI1", "NCI109", "PTC_FM"};
         }
-        return std::vector<std::string>(argv, argv + argc);
+        return std::vector<std::string>(argv + 1, argv + argc);
     }();
 
     {
