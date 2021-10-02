@@ -133,6 +133,8 @@ namespace GraphLibrary {
 
         EdgeLabels get_local() const;
 
+        bool has_node_labels() const;
+
         // Manage node labels.
         Labels m_node_labels;
         Attributes m_node_attributes;

@@ -144,5 +144,9 @@ namespace GraphLibrary {
         return m_node_to_three_tuple;
     }
 
+    bool Graph::has_node_labels() const {
+        return !m_node_labels.empty();
+    }
+
     Graph::~Graph() {}
 }
