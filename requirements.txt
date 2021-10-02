@@ -1,0 +1,7 @@
+numpy
+pandas
+scipy
+sklearn
+torch>=1.5
+torch-geometric>=1.5
+pybind11
