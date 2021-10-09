@@ -46,9 +46,7 @@ def main(dataset):
                   f'{acc_train=}', f'{s_1=}')
             print(f'Took {end - start}')
         else:
-            print(f"Nothing to do for algorithm {a} on {dataset}."
-
-    exit()
+            print(f"Nothing to do for algorithm {a} on {dataset}.")
 
 
 if __name__ == "__main__":
